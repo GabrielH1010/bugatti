@@ -65,6 +65,15 @@ function Page() {
           </div>
         </Container>
       </Section>
+
+      <Section>
+        <div className="category">
+          <Title style={{ color: "black", fontWeight: 500 }}>
+            BUGATTI UNIVERSE
+          </Title>
+        </div>
+        <Container></Container>
+      </Section>
     </div>
   );
 }

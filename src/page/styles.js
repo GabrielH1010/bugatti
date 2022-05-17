@@ -65,7 +65,6 @@ export const Area = styled.div`
  
 export const Topico = styled.div`
   display: flex;
-  max-width: 1200px;
   width: 100%;
   flex-direction: column;
   align-items: flex-start;
@@ -74,15 +73,15 @@ export const Topico = styled.div`
   background-image: url('https://www.bugatti.com/fileadmin/_processed_/5/d/csm_desktop-bugatti-chiron-sport-34-front_c56f9342e4.png');
 
   @media (max-width: 800px) {
-    background-image: url('https://g4carros.com.br/wp-content/uploads/2022/02/cropped-chiron.webp');
-    height: 135vh ;
+    background-image: url('https://img.ibxk.com.br/2020/09/18/18124050132137.jpg');
+    height: 115vh ;
   }
 
   .topicContainer{
-    width: 35%;
-    margin-left: 5.5%;
+    width: 40%;
+    margin-left: 55px;
 
-    @media (max-width: 1000px) {
+    @media (max-width: 810px) {
       width: 85%;
       margin: 50px 0 0 20px;
     }
@@ -91,7 +90,7 @@ export const Topico = styled.div`
       font-size: 50px;
       font-weight: 500;
 
-      @media (max-width: 800px) {
+      @media (max-width: 810px) {
         font-size: 50px;
       }
     }
@@ -99,7 +98,7 @@ export const Topico = styled.div`
       line-height: 5px;
       font-size: 16px;
 
-      @media (max-width: 800px) {
+      @media (max-width: 810px) {
         line-height: 10px;
       }
     }
