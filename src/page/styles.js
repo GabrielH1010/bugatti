@@ -63,14 +63,14 @@ export const Area = styled.div`
   }
 `;
  
-export const Topico = styled.div`
+export const Topico = styled.section`
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: flex-start;
   justify-content: left;
-  height:95vh ;
-  background-image: url('https://www.bugatti.com/fileadmin/_processed_/5/d/csm_desktop-bugatti-chiron-sport-34-front_c56f9342e4.png');
+  height: 100vh ;
+  background-image: url('https://2p2bboli8d61fqhjiqzb8p1a-wpengine.netdna-ssl.com/wp-content/uploads/2021/09/08-bugatti_css300_delivery-scaled.jpg');
 
   @media (max-width: 800px) {
     background-image: url('https://img.ibxk.com.br/2020/09/18/18124050132137.jpg');
@@ -87,8 +87,9 @@ export const Topico = styled.div`
     }
 
     .title{
-      font-size: 50px;
+      font-size: 55px;
       font-weight: 500;
+      margin: 100px 0 0 0px;
 
       @media (max-width: 810px) {
         font-size: 50px;
@@ -149,9 +150,16 @@ export const Container = styled.nav`
 	grid-gap: 10px;
   
   }
+
+  button{
+    background: #888;
+    width: 100%;
+    height: 10%;
+    border: none;
+  }
   img{
     width: 100%;
-    height: 100%;
+    height: 90%;
     object-fit: cover;
     cursor: pointer;
 

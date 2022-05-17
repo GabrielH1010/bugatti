@@ -48,12 +48,14 @@ function Page() {
           <div className="grid">
             <div class="item item-1">
               <img src={car1} alt="" />
+              <button>ver mais</button>
             </div>
             <div className="item item-2">
               <img
                 src="https://www.automaistv.com.br/wp-content/uploads/2019/05/bugatti_la_voiture_noire_6.jpg"
                 alt=""
               />
+              <button>ver mais</button>
             </div>
             <div className="item item-3">
               {" "}
@@ -61,6 +63,7 @@ function Page() {
                 src="https://s2.glbimg.com/33SufEkkebUPZ_hdkr-RIKcbzxM=/e.glbimg.com/og/ed/f/original/2021/10/06/abre.jpeg"
                 alt=""
               />
+              <button>NOVIDADE</button>
             </div>
           </div>
         </Container>
