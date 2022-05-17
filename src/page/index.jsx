@@ -1,34 +1,19 @@
-import React, { useState } from "react";
-import { Header, Container, Section, Area } from "./styles";
+import React from "react";
+import { Header, Container, Section, Area, Title, Topico } from "./styles";
 import { AiOutlineMenu } from "react-icons/ai";
-import Logo from "../assets/logo.png";
 import { FiMapPin } from "react-icons/fi";
-import { textHeader } from "./../styles/colorProvider";
+import car1 from "../assets/car1.jpg";
 
 function Page() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  const scrollTo = (section) => {
-    setMobileMenuOpen(false);
-
-    const element = document.getElementById(section);
-    element.scrollIntoView({
-      block: "start",
-      scrollPadding: "50px",
-      behavior: "smooth",
-    });
-  };
-
-  const navTo = (url) => {
-    setMobileMenuOpen(false);
-    window.open(url, "_blank");
-  };
-
   return (
     <div className="App">
       <Header id="Home">
         <Area>
-          <AiOutlineMenu size={18} color={textHeader} />
+          <AiOutlineMenu
+            size={18}
+            color="#717171"
+            style={{ cursor: "pointer" }}
+          />
           <img
             src="https://www.bugatti.com/typo3conf/ext/bugatti_sitepackage/Resources/Public/Images/Logo/logo-bugatti_84x44.webp"
             alt=""
@@ -36,23 +21,50 @@ function Page() {
           <div>
             <p>
               FIND A BUGATTI PARTNER{" "}
-              <FiMapPin
-                style={{ marginLeft: 10 }}
-                size={20}
-                color={textHeader}
-              />
+              <FiMapPin style={{ marginLeft: 10 }} size={18} color="#717171" />
+            </p>
+            <p className="icon">
+              <FiMapPin style={{ marginLeft: 10 }} size={18} color="#717171" />
             </p>
           </div>
         </Area>
       </Header>
 
-      <Section
-        style={{
-          backgroundImage:
-            "url(https://www.bugatti.com/fileadmin/_processed_/sei/p1/se-image-b40d6034c325ce3bf50035ad5f958a75.webp)",
-          height: "85vh",
-        }}
-      ></Section>
+      <Topico>
+        <div className="topicContainer">
+          <h3 className="title">BUGATTI CHIRON SUPER SPORT</h3>
+          <p className="subtitle">THE ULTIMATE GRAND TOURISME</p>
+          <p className="subtitle">DELIVERING BRUTAL PERFORMANCE</p>
+          <p className="subtitle">IN TOTAL COMFORT</p>
+          <button>DISCOVER MODE</button>
+        </div>
+      </Topico>
+
+      <Section>
+        <div className="category">
+          <Title style={{ color: "black", fontWeight: 500 }}>Models</Title>
+        </div>
+        <Container>
+          <div class="grid">
+            <div class="item item-1">
+              <img src={car1} alt="" />
+            </div>
+            <div class="item item-2">
+              <img
+                src="https://www.automaistv.com.br/wp-content/uploads/2019/05/bugatti_la_voiture_noire_6.jpg"
+                alt=""
+              />
+            </div>
+            <div class="item item-3">
+              {" "}
+              <img
+                src="https://s2.glbimg.com/33SufEkkebUPZ_hdkr-RIKcbzxM=/e.glbimg.com/og/ed/f/original/2021/10/06/abre.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+        </Container>
+      </Section>
     </div>
   );
 }
