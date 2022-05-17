@@ -45,17 +45,17 @@ function Page() {
           <Title style={{ color: "black", fontWeight: 500 }}>Models</Title>
         </div>
         <Container>
-          <div class="grid">
+          <div className="grid">
             <div class="item item-1">
               <img src={car1} alt="" />
             </div>
-            <div class="item item-2">
+            <div className="item item-2">
               <img
                 src="https://www.automaistv.com.br/wp-content/uploads/2019/05/bugatti_la_voiture_noire_6.jpg"
                 alt=""
               />
             </div>
-            <div class="item item-3">
+            <div className="item item-3">
               {" "}
               <img
                 src="https://s2.glbimg.com/33SufEkkebUPZ_hdkr-RIKcbzxM=/e.glbimg.com/og/ed/f/original/2021/10/06/abre.jpeg"

@@ -154,11 +154,12 @@ export const Container = styled.nav`
     height: 100%;
     object-fit: cover;
     cursor: pointer;
+
     :hover{
       opacity: 0.9;
     }
-
   }
+
   .item {
     text-align: center;
   }
