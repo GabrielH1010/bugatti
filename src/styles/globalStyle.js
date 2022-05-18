@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { backgroundColor, white } from './colorProvider';
+import { white } from './colorProvider';
 
 export const GlobalStyle = createGlobalStyle`
   html{
@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     height: 100%;
     box-sizing: border-box;
-    background-color: ${backgroundColor};
+    background-color: ${white};
     color: ${white};
     max-width: 100% !important;
   }
