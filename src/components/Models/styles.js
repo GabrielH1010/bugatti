@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { white } from 'styles/colorProvider'
+import { black, white } from 'styles/colorProvider'
 
 export const Section = styled.div`
   display: flex;
@@ -8,7 +8,7 @@ export const Section = styled.div`
   align-items: center;
   justify-content: ${(props) => props.justifyContent || 'center'};
   height: 100%;
-  background-color: white;
+  background-color: ${white};
 `
 export const Container = styled.div`
   display: flex;
@@ -21,7 +21,6 @@ export const Container = styled.div`
   @media (max-width: 800px) {
     width: 90%;
   }
-
 `;
 
 export const Grid = styled.div`
@@ -76,7 +75,6 @@ export const Item = styled.div`
     }
   }
 `
-
 export const Button = styled.button`
   width: 100%;
   border: none;
@@ -87,7 +85,7 @@ export const Button = styled.button`
   cursor: pointer;
   justify-content: flex-start;
   margin: -10px 0 15px 0;
-  background-color: #121212;
+  background-color: ${black};
 
   :hover{
       opacity: 0.9;

@@ -1,3 +1,3 @@
-export const text = '#F6F6F6';
+export const black = '#121212';
 export const textHeader ='#868688';
 export const white = '#ffff';

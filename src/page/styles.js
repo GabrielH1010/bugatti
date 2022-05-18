@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import background from '../assets/background.jpg'
 import backgroundMobile from '../assets/backgroundMobile.jpg'
-import { white } from 'styles/colorProvider'
+import { black, white } from 'styles/colorProvider'
 
 export const Topico = styled.section`
   display: flex;
@@ -15,13 +15,13 @@ export const Topico = styled.section`
 
   @media (max-width: 800px) {
     background-image: url(${backgroundMobile});
-  }
+    }
   @media (max-width: 415px) {
     height: 65vh;
-  }
+    }
   @media (max-width: 380px) {
     height: 86vh;
-  }
+    }
 
   .topicContainer{
     width: 40%;
@@ -51,7 +51,7 @@ export const Topico = styled.section`
     }
 
     button{
-      color: white;
+      color: ${white};
       font-weight: 600;
       margin-top: 20px;
       background-color: transparent;
@@ -62,7 +62,7 @@ export const Topico = styled.section`
 
       :hover{
         background-color: white;
-        color: black;
+        color: ${black};
       }
     }
   }`
@@ -74,7 +74,7 @@ export const Section = styled.section`
   align-items: center;
   justify-content: ${(props) => props.justifyContent || 'center'};
   height: 100%;
-  background-color: white;
+  background-color: ${white};
 
   .category{
     width: 90%;
@@ -84,9 +84,9 @@ export const Section = styled.section`
 export const Title = styled.h3`
   font-size: ${(props) => props.fontSize || '45px'};
   text-transform: uppercase;
-  color: ${(props) => props.color || white};
-  margin-bottom: ${(props) => props.marginBottom || '25px'};
-  font-weight: ${(props) => props.fontWeight || 'bold'};
+  color: ${black};
+  margin: ${(props) => props.margin || '75px 0 25px 0'};
+  font-weight: 500;
 
   @media (max-width: 800px) {
     font-size: 35px;

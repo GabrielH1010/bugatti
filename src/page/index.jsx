@@ -23,7 +23,7 @@ function Page() {
       <Section>
         <Fade left>
           <div className="category">
-            <Title style={{ color: "black", fontWeight: 500 }}>Models</Title>
+            <Title>Models</Title>
           </div>
           <Models />
         </Fade>
@@ -32,9 +32,7 @@ function Page() {
       <Section>
         <Fade left>
           <div className="category">
-            <Title style={{ color: "black", fontWeight: 500 }}>
-              BUGATTI UNIVERSE
-            </Title>
+            <Title>BUGATTI UNIVERSE</Title>
           </div>
         </Fade>
       </Section>
