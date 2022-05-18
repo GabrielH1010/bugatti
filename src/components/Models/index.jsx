@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Fade from "react-reveal/Fade";
 import car1 from "../../assets/car1.jpg";
 import car2 from "../../assets/car2.jpg";
 import car3 from "../../assets/car3.webp";
@@ -27,9 +26,7 @@ function Models() {
           ) : (
             <Item className="item-1">
               <div>
-                <Fade top>
-                  <img onClick={() => setChiron(true)} src={detail1} alt="" />
-                </Fade>
+                <img onClick={() => setChiron(true)} src={detail1} alt="" />
                 <Button onClick={() => setChiron(true)}>BACK</Button>
               </div>
             </Item>
@@ -45,13 +42,7 @@ function Models() {
           ) : (
             <Item className="item-2">
               <div>
-                <Fade bottom>
-                  <img
-                    onClick={() => setLaVoiture(true)}
-                    src={detail2}
-                    alt=""
-                  />
-                </Fade>
+                <img onClick={() => setLaVoiture(true)} src={detail2} alt="" />
                 <Button onClick={() => setLaVoiture(true)}>BACK</Button>
               </div>
             </Item>
@@ -66,10 +57,7 @@ function Models() {
           ) : (
             <Item className="item-3">
               <div>
-                <Fade left>
-                  <img onClick={() => setBolide(true)} src={detail3} alt="" />
-                </Fade>
-
+                <img onClick={() => setBolide(true)} src={detail3} alt="" />
                 <Button onClick={() => setBolide(true)}>BACK</Button>
               </div>
             </Item>

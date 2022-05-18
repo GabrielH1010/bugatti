@@ -12,6 +12,7 @@ export const Topico = styled.section`
   height: 95vh ;
   max-width: 1280;
   background-image: url(${background});
+  background-repeat: no-repeat;
 
   @media (max-width: 800px) {
     background-image: url(${backgroundMobile});

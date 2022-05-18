@@ -1,6 +1,6 @@
 import React from "react";
 import { Section, Title, Topico } from "./styles";
-import { Header, Footer, Models } from "components";
+import { Header, Footer, Models, Universe } from "components";
 import Fade from "react-reveal/Fade";
 
 function Page() {
@@ -32,8 +32,17 @@ function Page() {
       <Section>
         <Fade left>
           <div className="category">
+            <Title style={{ marginTop: "110px" }}>BUGATTI UNIVERSE</Title>
+          </div>
+          <Universe />
+        </Fade>
+      </Section>
+      <Section>
+        <Fade left>
+          <div className="category">
             <Title>BUGATTI UNIVERSE</Title>
           </div>
+          <Universe />
         </Fade>
       </Section>
       <Fade left>

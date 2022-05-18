@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { textHeader } from 'styles/colorProvider'
+import { textHeader, white } from 'styles/colorProvider'
 
 export const Container = styled.nav`
   display: flex;
@@ -7,7 +7,7 @@ export const Container = styled.nav`
   height: 9.5vh;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-color: ${white};
 
   img{
     display: flex;

@@ -7,6 +7,7 @@ export const Container = styled.footer`
   align-items: center;
   justify-content: center;
   background-color: black;
+  margin-top: 50px;
 
   img{
     display: flex;

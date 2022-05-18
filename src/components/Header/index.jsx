@@ -7,37 +7,27 @@ import { Container, Area } from "./styles";
 
 function header() {
   return (
-    <Fade top>
-      <Container>
-        <Area>
-          <Fade top>
-            <AiOutlineMenu
-              size={18}
-              color="#717171"
-              style={{ cursor: "pointer" }}
-            />
-            <img src={logo} alt="Logo Bugatti" />
-            <div>
-              <p>
-                FIND A BUGATTI PARTNER{" "}
-                <FiMapPin
-                  style={{ marginLeft: 10 }}
-                  size={18}
-                  color="#717171"
-                />
-              </p>
-              <p className="icon">
-                <FiMapPin
-                  style={{ marginLeft: 10 }}
-                  size={18}
-                  color="#717171"
-                />
-              </p>
-            </div>
-          </Fade>
-        </Area>
-      </Container>
-    </Fade>
+    <Container>
+      <Area>
+        <Fade top>
+          <AiOutlineMenu
+            size={18}
+            color="#717171"
+            style={{ cursor: "pointer" }}
+          />
+          <img src={logo} alt="Logo Bugatti" />
+          <div>
+            <p>
+              FIND A BUGATTI PARTNER{" "}
+              <FiMapPin style={{ marginLeft: 10 }} size={18} color="#717171" />
+            </p>
+            <p className="icon">
+              <FiMapPin style={{ marginLeft: 10 }} size={18} color="#717171" />
+            </p>
+          </div>
+        </Fade>
+      </Area>
+    </Container>
   );
 }
 

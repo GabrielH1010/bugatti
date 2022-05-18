@@ -8,7 +8,7 @@ export const Section = styled.div`
   align-items: center;
   justify-content: ${(props) => props.justifyContent || 'center'};
   height: 100%;
-  background-color: white;
+  background-color: ${white};
 
 
 .category{
@@ -26,26 +26,17 @@ export const Container = styled.div`
   @media (max-width: 800px) {
     width: 90%;
   }
-
 `;
 
-export const Grid = styled.div`
+export const Area = styled.div`
   display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 20px;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
 
-  .item-3 {
-    grid-row-start: 1;
-    grid-row-end: 3;
-
-    div{
-      width: 100%;
-      height: 98%;
-    }
-  }
-
-  @media (max-width: 1200px) {
+  @media (max-width: 700px) {
     grid-gap: 0px;
+    grid-template-columns: auto;
+
   }
 `;
 
@@ -53,72 +44,31 @@ export const Item = styled.div`
   text-align: center;
   justify-content: center;
 
-  div{
+  .bottom-container{
       width: 100%;
-      height: 96%;
-    }
-
+      height: 95%;
+      align-items: center;
+      flex-direction: column;
+  }
   img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 95%;
     cursor: pointer;
-    transition: all 0.1s;
 
     :hover{
       opacity: 0.9;
     }
   }
 `
-export const Title = styled.h3`
-  font-size: ${(props) => props.fontSize || '45px'};
-  text-transform: uppercase;
-  color: ${(props) => props.color || white};
-  margin-bottom: ${(props) => props.marginBottom || '25px'};
-  font-weight: ${(props) => props.fontWeight || 'bold'};
-`;
-
-export const Button = styled.button`
-  width: 100%;
-  border: none;
-  height: 30px;
-  color: white;
-  align-items: left;
-  flex-direction: row;
-  cursor: pointer;
-  justify-content: flex-start;
-  margin: -10px 0 15px 0;
-  background-color: #121212;
-
-  :hover{
-      opacity: 0.9;
-  }
-`;
-
-export const Dialog = styled.div`
-  display: flex;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background: red;
-  align-items: center;
-  justify-content: center;
-`;
-
-export const DialogBody = styled.div`
-  max-height: 90vh;
-  max-width: 95vw;
-  overflow: auto;
-
-  ::-webkit-scrollbar {
-     width: 10px;
-   }
-   ::-webkit-scrollbar-thumb {
-   background: #121214;
-     border-radius: 10px;
-   }
-   ::-webkit-scrollbar-thumb:hover {
-     box-shadow: inset 0 0 2px #81c043;
- }
-`;
+export const Description = styled.div`
+    display: flex;
+    background: #080E1C;
+    width: 100%;
+    height: 25px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -4px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+  `
