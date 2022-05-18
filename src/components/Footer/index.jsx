@@ -1,12 +1,29 @@
 import React from "react";
+import {
+  BsPinterest,
+  BsTwitter,
+  BsFacebook,
+  BsInstagram,
+  BsYoutube,
+  BsLinkedin,
+} from "react-icons/bs";
 import { Container, Area } from "./styles";
 
-function header() {
+function Footer() {
   return (
     <Container>
-      <Area></Area>
+      <Area>
+        <div>
+          <BsFacebook />
+          <BsTwitter />
+          <BsInstagram />
+          <BsPinterest />
+          <BsYoutube />
+          <BsLinkedin />
+        </div>
+      </Area>
     </Container>
   );
 }
 
-export default header;
+export default Footer;

@@ -23,7 +23,7 @@ function Page() {
       <Section>
         <Fade left>
           <div className="category">
-            <Title>Models</Title>
+            <Title style={{ marginTop: 75 }}>Models</Title>
           </div>
           <Models />
         </Fade>
@@ -32,22 +32,21 @@ function Page() {
       <Section>
         <Fade left>
           <div className="category">
-            <Title style={{ marginTop: "110px" }}>BUGATTI UNIVERSE</Title>
-          </div>
-          <Universe />
-        </Fade>
-      </Section>
-      <Section>
-        <Fade left>
-          <div className="category">
             <Title>BUGATTI UNIVERSE</Title>
           </div>
           <Universe />
         </Fade>
       </Section>
-      <Fade left>
-        <Footer />
-      </Fade>
+
+      <Section>
+        <Fade left>
+          <div className="category">
+            <Title>NEWS</Title>
+          </div>
+        </Fade>
+      </Section>
+
+      <Footer />
     </div>
   );
 }

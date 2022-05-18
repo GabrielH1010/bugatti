@@ -9,11 +9,6 @@ export const Section = styled.div`
   justify-content: ${(props) => props.justifyContent || 'center'};
   height: 100%;
   background-color: ${white};
-
-
-.category{
-    width: 90%;
-  }
 `
 export const Container = styled.div`
   display: flex;
@@ -36,7 +31,6 @@ export const Area = styled.div`
   @media (max-width: 700px) {
     grid-gap: 0px;
     grid-template-columns: auto;
-
   }
 `;
 
@@ -67,8 +61,8 @@ export const Description = styled.div`
     height: 25px;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: -4px;
+    margin-top: -5px;
     align-items: center;
     text-align: center;
     cursor: pointer;
-  `
+`

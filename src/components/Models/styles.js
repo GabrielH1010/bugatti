@@ -9,11 +9,6 @@ export const Section = styled.div`
   justify-content: ${(props) => props.justifyContent || 'center'};
   height: 100%;
   background-color: ${white};
-
-
-.category{
-    width: 90%;
-  }
 `
 export const Container = styled.div`
   display: flex;

@@ -86,7 +86,7 @@ export const Title = styled.h3`
   font-size: ${(props) => props.fontSize || '45px'};
   text-transform: uppercase;
   color: ${black};
-  margin: ${(props) => props.margin || '75px 0 25px 0'};
+  margin: 110px 0 25px 0;
   font-weight: 500;
 
   @media (max-width: 800px) {
