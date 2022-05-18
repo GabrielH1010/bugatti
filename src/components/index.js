@@ -3,11 +3,13 @@ import Footer from './Footer'
 import Models from './Models'
 import Universe from './Universe'
 import Dialog from './Dialog'
+import News from './News'
 
 export{
     Header,
     Footer,
     Models,
     Universe,
-    Dialog
+    Dialog,
+    News
 };

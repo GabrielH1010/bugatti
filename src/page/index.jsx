@@ -1,6 +1,6 @@
 import React from "react";
 import { Section, Title, Topico } from "./styles";
-import { Header, Footer, Models, Universe } from "components";
+import { Header, Footer, Models, Universe, News } from "components";
 import Fade from "react-reveal/Fade";
 
 function Page() {
@@ -43,6 +43,7 @@ function Page() {
           <div className="category">
             <Title>NEWS</Title>
           </div>
+          <News />
         </Fade>
       </Section>
 

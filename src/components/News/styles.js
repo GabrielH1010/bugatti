@@ -15,7 +15,7 @@ export const Container = styled.div`
   height: 100%;
   width: 90%;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 
   @media (max-width: 800px) {

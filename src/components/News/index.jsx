@@ -1,13 +1,16 @@
 import React from "react";
-
+import news from "../../assets/news.webp";
 import { Container, Section } from "./styles";
 
-function Universe() {
+function News() {
   return (
     <Section>
-      <Container></Container>
+      <Container>
+        <img src={news} alt="" />
+        <p style={{ color: "black" }}>teste</p>
+      </Container>
     </Section>
   );
 }
 
-export default Universe;
+export default News;
