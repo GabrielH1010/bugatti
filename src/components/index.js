@@ -5,6 +5,7 @@ import Universe from './Universe'
 import Dialog from './Dialog'
 import News from './News'
 import OtherNews from './OtherNews'
+import Social from './Social'
 
 export{
     Header,
@@ -13,5 +14,6 @@ export{
     Universe,
     Dialog,
     News,
-    OtherNews
+    OtherNews,
+    Social
 };

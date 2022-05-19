@@ -3,7 +3,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 import { Container, Section, Area, Item, Description } from "./styles";
 
-function Universe() {
+function OtherNews() {
   return (
     <Section>
       <Container>
@@ -77,4 +77,4 @@ function Universe() {
   );
 }
 
-export default Universe;
+export default OtherNews;
