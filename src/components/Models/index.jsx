@@ -27,7 +27,7 @@ function Models() {
             <Item className="item-1">
               <div>
                 <img onClick={() => setChiron(true)} src={detail1} alt="" />
-                <Button onClick={() => setChiron(true)}>BACK</Button>
+                <Button onClick={() => setChiron(true)}>RETURN</Button>
               </div>
             </Item>
           )}
@@ -43,7 +43,7 @@ function Models() {
             <Item className="item-2">
               <div>
                 <img onClick={() => setLaVoiture(true)} src={detail2} alt="" />
-                <Button onClick={() => setLaVoiture(true)}>BACK</Button>
+                <Button onClick={() => setLaVoiture(true)}>RETURN</Button>
               </div>
             </Item>
           )}
@@ -58,7 +58,7 @@ function Models() {
             <Item className="item-3">
               <div>
                 <img onClick={() => setBolide(true)} src={detail3} alt="" />
-                <Button onClick={() => setBolide(true)}>BACK</Button>
+                <Button onClick={() => setBolide(true)}>RETURN</Button>
               </div>
             </Item>
           )}

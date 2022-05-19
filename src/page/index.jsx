@@ -47,6 +47,15 @@ function Page() {
           <OtherNews />
         </Fade>
       </Section>
+      <Section>
+        <Fade left>
+          <div className="category">
+            <Title>SOCIAL @BUGATTI</Title>
+          </div>
+          <News />
+          <OtherNews />
+        </Fade>
+      </Section>
 
       <Footer />
     </div>

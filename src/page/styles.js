@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import background from '../assets/background.jpg'
+import background from '../assets/background.jpeg'
 import backgroundMobile from '../assets/backgroundMobile.jpg'
 import { black, white } from 'styles/colorProvider'
 
