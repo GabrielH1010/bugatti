@@ -73,7 +73,7 @@ export const Section = styled.section`
   width: 100%;
   flex-direction: column;
   align-items: center;
-  justify-content: ${(props) => props.justifyContent || 'center'};
+  justify-content: center;
   height: 100%;
   background-color: ${white};
 
@@ -86,10 +86,11 @@ export const Title = styled.h3`
   font-size: ${(props) => props.fontSize || '45px'};
   text-transform: uppercase;
   color: ${black};
-  margin: 110px 0 25px 0;
+  margin: 100px 0 25px 0;
   font-weight: 500;
 
   @media (max-width: 800px) {
+    margin: 80px 0 25px 0;
     font-size: 35px;
   }
 `

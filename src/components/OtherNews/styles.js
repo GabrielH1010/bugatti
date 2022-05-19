@@ -3,6 +3,7 @@ import { white, black } from 'styles/colorProvider'
 
 export const Section = styled.div`
   display: flex;
+  margin-top: 30px;
   width: 100%;
   flex-direction: column;
   align-items: center;
@@ -15,55 +16,71 @@ export const Container = styled.div`
   height: 100%;
   width: 90%;
   flex-direction: row;
-  align-items: top;
-  justify-content: space-between;
-
-  @media (max-width: 1000px) {
-    width: 90%;
-    align-items: left;
-    justify-content: flex-start;
-    flex-direction: column;
-  }
-`;
-export const Image = styled.div`
-  display: flex;
-  height: 100%;
-  width: 100%;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-right: 15px;
 
-  img{
-    width: 100%;
-    align-items: flex-start;
-    text-align: left;
+  @media (max-width: 800px) {
+    width: 90%;
   }
 `;
-export const Right = styled.div`
-  display: flex;
-  height: 100%;
-  width: 100%;
-  flex-direction: column;
-  align-items: left;
+
+export const Area = styled.div`
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+
+  @media (max-width: 685px) {
+    grid-gap: 0px;
+    grid-template-columns: auto;
+  }
+`;
+
+export const Item = styled.div`
+  text-align: center;
   justify-content: center;
 
-  p{
-    font-size: 12px;
-    margin-bottom: -15px;
-    color: #888888; 
+  .bottom-container{
+      width: 100%;
+      height: 95%;
+      align-items: center;
+      flex-direction: column;
   }
-  h3{
-    font-size: 22px;
-    font-weight: 400;
+  img{
+    width: 100%;
+    height: 60%;
+    cursor: pointer;
+
+    :hover{
+      opacity: 0.9;
+    }
+  }
+`
+export const Description = styled.div`
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    cursor: pointer;
+
+    p{
+    font-size: 12px;
+    margin-bottom: -5px;
+    color: #888888; 
+    }
+
+    h3{
+    font-size: 18px;
+    font-weight: 500;
     color: ${black}; 
   }
 
   div{
     display: flex;
-    margin-top: 36.5%;
+    margin-top: -10px;
     flex-direction: row;
-    width: 180px;
+    width: 195px;
     height: 50px;
     align-items: center;
     cursor: pointer;
@@ -74,11 +91,11 @@ export const Right = styled.div`
       }
     p{
       margin-bottom: 0px;
-      font-size:16px;      
+      font-size:18px;      
     }
 
     @media (max-width: 1000px) {
       margin-top: 0;
     }
   }
-`;
+`

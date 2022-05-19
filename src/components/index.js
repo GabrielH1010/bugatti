@@ -4,6 +4,7 @@ import Models from './Models'
 import Universe from './Universe'
 import Dialog from './Dialog'
 import News from './News'
+import OtherNews from './OtherNews'
 
 export{
     Header,
@@ -11,5 +12,6 @@ export{
     Models,
     Universe,
     Dialog,
-    News
+    News,
+    OtherNews
 };

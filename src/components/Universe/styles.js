@@ -28,7 +28,7 @@ export const Area = styled.div`
   grid-template-columns: auto auto auto;
   grid-gap: 10px;
 
-  @media (max-width: 700px) {
+  @media (max-width: 685px) {
     grid-gap: 0px;
     grid-template-columns: auto;
   }
