@@ -1,5 +1,5 @@
 import React from "react";
-import { Section, Title, Topico } from "./styles";
+import { Section, Title, Topico, Divider } from "./styles";
 import {
   Header,
   Footer,
@@ -9,6 +9,8 @@ import {
   OtherNews,
   Social,
 } from "components";
+import { BsArrowRight } from "react-icons/bs";
+
 import Fade from "react-reveal/Fade";
 
 function Page() {
@@ -55,6 +57,17 @@ function Page() {
           <OtherNews />
         </Fade>
       </Section>
+      <Divider>
+        <hr />
+        <div>
+          <a href="https://www.bugatti.com/media/news/">VIEW ALL NEWS</a>
+          <BsArrowRight
+            color="#888888"
+            size={22}
+            style={{ marginLeft: "10px" }}
+          />
+        </div>
+      </Divider>
       <Section>
         <Fade left>
           <div className="category">
@@ -63,7 +76,19 @@ function Page() {
           <Social />
         </Fade>
       </Section>
-
+      <Divider>
+        <hr />
+        <div>
+          <a href="https://www.bugatti.com/media/social-media/">
+            VIEW MORE POSTS
+          </a>
+          <BsArrowRight
+            color="#888888"
+            size={22}
+            style={{ marginLeft: "10px" }}
+          />
+        </div>
+      </Divider>
       <Footer />
     </div>
   );

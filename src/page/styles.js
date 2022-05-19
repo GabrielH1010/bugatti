@@ -9,7 +9,7 @@ export const Topico = styled.section`
   flex-direction: column;
   align-items: flex-start;
   justify-content: left;
-  height: 95vh ;
+  height: 88vh ;
   max-width: 1280;
   background-image: url(${background});
   background-repeat: no-repeat;
@@ -92,5 +92,34 @@ export const Title = styled.h3`
   @media (max-width: 800px) {
     margin: 80px 0 25px 0;
     font-size: 35px;
+  }
+`
+export const Divider = styled.div`
+  margin-top: 60px;
+  display:flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  hr{
+    width: 280px;
+    background: #888888;
+    height: 1.5px;
+    border: none;
+  }
+
+  div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    a{
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 17px;
+      margin: 5px;
+      color: #888888;
+    }
   }
 `

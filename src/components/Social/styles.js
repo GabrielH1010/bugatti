@@ -75,11 +75,32 @@ export const Area = styled.div`
     .description {
         padding-left: 10px;
         font-size: 14px;
-        margin-top: 95%;
+        margin-top: 90%;
+
+        @media (max-width: 900px) {
+          font-size: 12px;
+          margin-top: 90%;
+        }
+        @media (max-width: 730px) {
+          font-size: 12px;
+          margin-top: 0%;
+        }
+        @media (max-width: 700px) {
+          font-size: 20px;
+          margin-top: 95%;
+        }
     }
 
-  @media (max-width: 685px) {
-    grid-gap: 0px;
+  @media (max-width: 1200px) {
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto;
+  }
+  @media (max-width: 1000px) {
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+  }
+  @media (max-width: 700px) {
+    grid-gap: 15px;
     grid-template-columns: auto;
   }
 `;
