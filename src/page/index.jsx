@@ -14,6 +14,10 @@ import { BsArrowRight } from "react-icons/bs";
 import Fade from "react-reveal/Fade";
 
 function Page() {
+  const navTo = (url) => {
+    window.open(url, "_blank");
+  };
+
   return (
     <div className="App">
       <Header />
@@ -26,7 +30,15 @@ function Page() {
             <p className="subtitle">THE ULTIMATE GRAND TOURISME</p>
             <p className="subtitle">DELIVERING BRUTAL PERFORMANCE</p>
             <p className="subtitle">IN TOTAL COMFORT</p>
-            <button>DISCOVER MODE</button>
+            <button
+              onClick={() =>
+                navTo(
+                  "https://www.bugatti.com/models/chiron-models/chiron-super-sport/"
+                )
+              }
+            >
+              DISCOVER MODE
+            </button>
           </Fade>
         </div>
       </Topico>
