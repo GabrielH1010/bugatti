@@ -10,7 +10,6 @@ import {
   Social,
 } from "components";
 import { BsArrowRight } from "react-icons/bs";
-
 import Fade from "react-reveal/Fade";
 
 function Page() {

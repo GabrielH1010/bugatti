@@ -1,27 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import watch from "../../assets/watch.webp";
 import car from "../../assets/car.webp";
 import carrear from "../../assets/carrear.webp";
 import { BsArrowRight } from "react-icons/bs";
 
 import { Container, Section, Area, Item, Description } from "./styles";
-import { Dialog } from "components";
 
 function Universe() {
-  const [open, setOpen] = useState(false);
-
-  const handleOpen = () => {
-    setOpen(true);
-  };
-  const handleClose = () => {
-    setOpen(false);
+  const navTo = (url) => {
+    window.open(url, "_blank");
   };
 
   return (
     <Section>
       <Container>
         <Area>
-          <Item onClick={handleOpen}>
+          <Item onClick={() => navTo("https://www.bugatti.com/lifestyle/")}>
             <div className="bottom-container">
               <img src={watch} alt="" />
               <Description>
@@ -30,7 +24,7 @@ function Universe() {
               </Description>
             </div>
           </Item>
-          <Item onClick={handleOpen}>
+          <Item onClick={() => navTo("https://www.partner.bugatti/")}>
             <div className="bottom-container">
               <img src={car} alt="" />
               <Description>
@@ -41,7 +35,7 @@ function Universe() {
               </Description>
             </div>
           </Item>
-          <Item onClick={handleOpen}>
+          <Item onClick={() => navTo("https://www.bugatti.com/career/")}>
             <div className="bottom-container">
               <img src={carrear} alt="" />
               <Description>
@@ -50,12 +44,6 @@ function Universe() {
               </Description>
             </div>
           </Item>
-
-          <>
-            <Dialog open={open} onClose={handleClose} title="teste">
-              <p>teste</p>
-            </Dialog>
-          </>
         </Area>
       </Container>
     </Section>

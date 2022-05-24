@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const DialogBody = styled.div`
-  min-height: 200px;
-  min-width: 650px;
+  min-height: 350px;
+  min-width: 800px;
+  width: 85%;
   box-sizing: border-box;
   padding: 0px 30px;
   display: flex;
@@ -12,6 +13,6 @@ export const DialogBody = styled.div`
   padding-bottom: 30px;
 
   @media (max-width: 1000px) {
-    min-width: 410px;
+    min-width: 90%;
   }
 `;

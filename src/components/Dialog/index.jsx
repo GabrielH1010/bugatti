@@ -6,7 +6,14 @@ import { DialogBody } from "./styles";
 function DialogComponent({ onClose, open, title, children }) {
   return (
     <Dialog onClose={onClose} open={open} maxWidth="md">
-      <DialogTitle style={{ color: "red", fontFamily: "Nunito", fontSize: 22 }}>
+      <DialogTitle
+        style={{
+          color: "black",
+          fontFamily: "Dancing Script",
+          fontSize: 28,
+          fontWeight: "400",
+        }}
+      >
         {title}
       </DialogTitle>
       <DialogBody>{children}</DialogBody>
