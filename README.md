@@ -21,7 +21,7 @@ Esse projeto foi pensado para ser acessado não só pelo desktop mas também par
 ![Official-BUGATTI-__-Clone-Google-Chrome-2022-07-05-17-19-13](https://user-images.githubusercontent.com/92988574/177409610-4e2839d0-01cd-4dd1-bd1f-ad8076f6a4bf.gif)
 
 ### Site 🚀 
-Caso você tenha interesse de visitar e saber mais sobre esse projeto, basta acessar o link https://myportifolio-home.vercel.app.
+Caso você tenha interesse de visitar e saber mais sobre esse projeto, <a href="https://bugatti-clone.vercel.app/" target="_blank">acessar site</a>.
 
 ### Inicializar o projeto 🚀
 
